@@ -1,371 +1,371 @@
 @import "./variables";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    color: $midGray;
-    padding: 0;
-    margin: 0;
-    font-family: "Muli", sans-serif;
-    line-height: 1.6rem;
+  color: $midGray;
+  padding: 0;
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  line-height: 1.6rem;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    color: $midGray;
-    text-decoration: none;
+  color: $midGray;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-background {
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
-    padding: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+  padding: 0.25rem;
 }
 
 .main-title {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .space-between-letters {
-    letter-spacing: 0.4em;
+  letter-spacing: 0.4em;
 }
 
 header nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    transition: 0.3s;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s;
 
-    ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        position: relative;
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
 
-        li {
-            display: inline-block;
+    li {
+      display: inline-block;
 
-            a {
-                display: inline-block;
-                padding: 10px 20px;
+      a {
+        display: inline-block;
+        padding: 10px 20px;
 
-                i {
-                    margin: 5px;
-                }
-            }
-
-            &:last-child {
-                position: absolute;
-                right: 0;
-
-                a {
-                    padding: 10px 15px;
-                }
-            }
-
-            &:hover {
-                background-color: $lightGray;
-
-                a {
-                    color: $black;
-                }
-
-                &:last-child {
-                    background-color: $orange;
-
-                    a {
-                        color: $white;
-                    }
-                }
-            }
+        i {
+          margin: 5px;
         }
+      }
+
+      &:last-child {
+        position: absolute;
+        right: 0;
+
+        a {
+          padding: 10px 15px;
+        }
+      }
+
+      &:hover {
+        background-color: $lightGray;
+
+        a {
+          color: $black;
+        }
+
+        &:last-child {
+          background-color: $orange;
+
+          a {
+            color: $white;
+          }
+        }
+      }
     }
+  }
 }
 
 .header-bg {
-    height: 400px;
-    position: relative;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    filter: contrast($contrast);
-    h1 {
-        position: absolute;
-        margin: 0;
-        bottom: 50%;
-        right: 50%;
-        transform: translate(50%, 50%);
-        background-color: $darkGray;
-        color: $lightGray;
-        padding: 15px 15px;
-        letter-spacing: 0.4em;
-        font-size: 26px;
-        font-weight: 500;
-    }
+  height: 400px;
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  filter: contrast($contrast);
+  h1 {
+    position: absolute;
+    margin: 0;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: $darkGray;
+    color: $lightGray;
+    padding: 15px 15px;
+    letter-spacing: 0.4em;
+    font-size: 26px;
+    font-weight: 500;
+  }
 }
 
 .container {
-    max-width: 960px;
-    padding: 60px 15px;
-    margin: 0 auto;
+  max-width: 960px;
+  padding: 60px 15px;
+  margin: 0 auto;
 }
 
 .my-name {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    margin: 30px;
-    div {
-        text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  margin: 30px;
+  div {
+    text-align: center;
+  }
+  p {
+    margin-bottom: 30px;
+    i {
+      margin-right: 5px;
     }
-    p {
-        margin-bottom: 30px;
-        i {
-            margin-right: 5px;
-        }
-    }
-    img {
-        filter: contrast($contrast);
-    }
+  }
+  img {
+    filter: contrast($contrast);
+  }
 }
 
-.speciality {
-    .text-center {
-        font-size: 18px;
-        margin: 40px 0;
-    }
-    p i {
-        width: 30px;
-    }
-    .first-progress-bar {
-        display: flex;
-        div:first-child {
-            background-color: $midGray;
-            width: $html;
-            padding: 5px 0;
-            p {
-                width: 100%;
-                margin: 0;
-                text-align: center;
-                color: $white;
-            }
-        }
-        div:last-child {
-            background-color: $lightGray;
-            width: 100% - $html;
-            padding: 5px 0;
-        }
-    }
-    .second-progress-bar {
-        @extend .first-progress-bar;
-        div:first-child {
-            width: $css;
-        }
-        div:last-child {
-            width: 100% - $css;
-        }
-    }
-    .third-progress-bar {
-        @extend .first-progress-bar;
-        div:first-child {
-            width: $javascript;
-        }
-        div:last-child {
-            width: 100% - $javascript;
-        }
-    }
-}
-
-.achivements {
-    background-color: $midGray;
-    color: $white;
+.specialty {
+  .text-center {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+  p i {
+    width: 30px;
+  }
+  .first-progress-bar {
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    margin-top: 20px;
-    div {
+    div:first-child {
+      background-color: $midGray;
+      width: $html;
+      padding: 5px 0;
+      p {
+        width: 100%;
+        margin: 0;
         text-align: center;
-        p:first-child {
-            font-size: 24px;
-            margin-bottom: 0;
-        }
-        p:last-child {
-            margin: 10px 0 20px 0;
-        }
+        color: $white;
+      }
     }
+    div:last-child {
+      background-color: $lightGray;
+      width: 100% - $html;
+      padding: 5px 0;
+    }
+  }
+  .second-progress-bar {
+    @extend .first-progress-bar;
+    div:first-child {
+      width: $css;
+    }
+    div:last-child {
+      width: 100% - $css;
+    }
+  }
+  .third-progress-bar {
+    @extend .first-progress-bar;
+    div:first-child {
+      width: $javascript;
+    }
+    div:last-child {
+      width: 100% - $javascript;
+    }
+  }
+}
+
+.achievements {
+  background-color: $midGray;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin-top: 20px;
+  div {
+    text-align: center;
+    p:first-child {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    p:last-child {
+      margin: 10px 0 20px 0;
+    }
+  }
 }
 
 .portfolio-img {
-    height: 400px;
-    position: relative;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    filter: contrast($contrast);
-    p {
-        position: absolute;
-        margin: 0;
-        bottom: 50%;
-        right: 50%;
-        transform: translate(50%, 50%);
-        color: $black;
-        font-size: 36px;
-        font-weight: bold;
-        letter-spacing: 0.2em;
-    }
+  height: 400px;
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  filter: contrast($contrast);
+  p {
+    position: absolute;
+    margin: 0;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    color: $black;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+  }
 }
 
 .portfolio {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 15px;
-        margin: 50px;
-        img {
-            filter: contrast($contrast);
-            &:hover {
-                opacity: $contrast - 0.1;
-            }
-        }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 50px;
+    img {
+      filter: contrast($contrast);
+      &:hover {
+        opacity: $contrast - 0.1;
+      }
     }
-    .load-more {
-        text-align: center;
-        button {
-            background-color: $exteraLightGray;
-            color: $midGray;
-            padding: 15px 25px;
-            border: none;
-            font-weight: bold;
-            &:hover {
-                background-color: $lightGray;
-            }
-        }
+  }
+  .load-more {
+    text-align: center;
+    button {
+      background-color: $extraLightGray;
+      color: $midGray;
+      padding: 15px 25px;
+      border: none;
+      font-weight: bold;
+      &:hover {
+        background-color: $lightGray;
+      }
     }
+  }
 }
 
 .contact-img {
-    @extend .portfolio-img;
-    background-position: center center;
-    margin-top: 30px;
-    p {
-        color: $white;
-    }
+  @extend .portfolio-img;
+  background-position: center center;
+  margin-top: 30px;
+  p {
+    color: $white;
+  }
 }
 
 .contact {
-    margin-bottom: 50px;
-    .contact-info {
-        display: grid;
-        margin-top: 30px;
-        grid-template-columns: 1fr 2fr;
-        grid-column-gap: 40px;
-        img {
-            border-radius: 5px;
-            filter: contrast($contrast);
-        }
-        div {
-            div {
-                font-size: 18px;
-                margin: 20px 0;
-                p {
-                    margin: 10px 0;
-                    i {
-                        width: 30px;
-                        &:hover {
-                            color: $black;
-                        }
-                    }
-                }
-            }
-            input {
-                padding: 10px;
-                border: 1px solid $lightGray;
-                box-sizing: border-box;
-                font-size: 16px;
-            }
-            .contact-input {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-column-gap: 15px;
-                margin-bottom: 10px;
-            }
-            .contact-message {
-                width: 100%;
-            }
-            .contact-send-message {
-                text-align: right;
-                button {
-                    background-color: $black;
-                    color: $white;
-                    padding: 12px 20px 12px 15px;
-                    border: none;
-                    font-size: 16px;
-                    i {
-                        width: 30px;
-                    }
-                    &:hover {
-                        background-color: $lightGray;
-                        color: $darkGray;
-                    }
-                }
-            }
-        }
+  margin-bottom: 50px;
+  .contact-info {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 40px;
+    img {
+      border-radius: 5px;
+      filter: contrast($contrast);
     }
+    div {
+      div {
+        font-size: 18px;
+        margin: 20px 0;
+        p {
+          margin: 10px 0;
+          i {
+            width: 30px;
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+      }
+      input {
+        padding: 10px;
+        border: 1px solid $lightGray;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      .contact-input {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        margin-bottom: 10px;
+      }
+      .contact-message {
+        width: 100%;
+      }
+      .contact-send-message {
+        text-align: right;
+        button {
+          background-color: $black;
+          color: $white;
+          padding: 12px 20px 12px 15px;
+          border: none;
+          font-size: 16px;
+          i {
+            width: 30px;
+          }
+          &:hover {
+            background-color: $lightGray;
+            color: $darkGray;
+          }
+        }
+      }
+    }
+  }
 }
 
 footer {
-    background-color: $midGray;
-    padding: 70px;
-    color: $white;
-    text-align: center;
-    a button {
-        background-color: $white;
-        color: $midGray;
-        padding: 10px 20px 10px 15px;
-        border: none;
-        font-size: 16px;
-        text-align: left;
-        i {
-            width: 25px;
-        }
-        &:hover {
-            background-color: $lightGray;
-        }
+  background-color: $midGray;
+  padding: 70px;
+  color: $white;
+  text-align: center;
+  a button {
+    background-color: $white;
+    color: $midGray;
+    padding: 10px 20px 10px 15px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    i {
+      width: 25px;
     }
     &:hover {
-        background-color: $black;
-        a button {
-            color: $black;
-        }
+      background-color: $lightGray;
     }
-    .footer-social-media {
-        font-size: 26px;
-        margin: 0;
-        margin-top: 25px;
-        a {
-            color: $white;
-            &:hover {
-                color: $lightGray;
-            }
-        }
+  }
+  &:hover {
+    background-color: $black;
+    a button {
+      color: $black;
     }
-    p:last-child {
-        margin-top: 25px;
-        margin-bottom: 0;
+  }
+  .footer-social-media {
+    font-size: 26px;
+    margin: 0;
+    margin-top: 25px;
+    a {
+      color: $white;
+      &:hover {
+        color: $lightGray;
+      }
     }
+  }
+  p:last-child {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
 }

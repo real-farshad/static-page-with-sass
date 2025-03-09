@@ -1,7 +1,7 @@
 # Static Page With Sass
 
-Live demo: [static-page-with-sass.vercel.app](https://static-page-with-sass.vercel.app/)
+[Live Demo](https://static-page-with-sass.vercel.app) • One of my first projects and since I like the design I decided to add it to my github. Here my main focus was to create a nice layout for the content using flex-boxes and girds in sass. This project was designed for desktop and large screens.
 
-One of my first projects. since i like the design i decided to add this to my github.
+## Screenshots
 
-Also i used sass for styling along with flex-boxes and grids for some of the contents layout. this is a single page design for large screens.
+![Feature 1 Demo](images/screenshot.jpg)

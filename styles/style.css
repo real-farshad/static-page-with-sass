@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,7 +27,7 @@ ul {
 .nav-background {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
   padding: 0.25rem;
 }
 
@@ -106,7 +106,7 @@ header nav ul li:hover:last-child a {
   background-position: top center;
   background-repeat: no-repeat;
   -webkit-filter: contrast(0.8);
-          filter: contrast(0.8);
+  filter: contrast(0.8);
 }
 
 .header-bg h1 {
@@ -115,7 +115,7 @@ header nav ul li:hover:last-child a {
   bottom: 50%;
   right: 50%;
   -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
   background-color: #151515;
   color: #d4d4d4;
   padding: 15px 15px;
@@ -133,8 +133,8 @@ header nav ul li:hover:last-child a {
 .my-name {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 50px;
   margin: 30px;
 }
@@ -153,101 +153,111 @@ header nav ul li:hover:last-child a {
 
 .my-name img {
   -webkit-filter: contrast(0.8);
-          filter: contrast(0.8);
+  filter: contrast(0.8);
 }
 
-.speciality .text-center {
+.specialty .text-center {
   font-size: 18px;
   margin: 40px 0;
 }
 
-.speciality p i {
+.specialty p i {
   width: 30px;
 }
 
-.speciality .first-progress-bar, .speciality .second-progress-bar, .speciality .third-progress-bar {
+.specialty .first-progress-bar,
+.specialty .second-progress-bar,
+.specialty .third-progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.speciality .first-progress-bar div:first-child, .speciality .second-progress-bar div:first-child, .speciality .third-progress-bar div:first-child {
+.specialty .first-progress-bar div:first-child,
+.specialty .second-progress-bar div:first-child,
+.specialty .third-progress-bar div:first-child {
   background-color: #606060;
   width: 90%;
   padding: 5px 0;
 }
 
-.speciality .first-progress-bar div:first-child p, .speciality .second-progress-bar div:first-child p, .speciality .third-progress-bar div:first-child p {
+.specialty .first-progress-bar div:first-child p,
+.specialty .second-progress-bar div:first-child p,
+.specialty .third-progress-bar div:first-child p {
   width: 100%;
   margin: 0;
   text-align: center;
   color: #ffffff;
 }
 
-.speciality .first-progress-bar div:last-child, .speciality .second-progress-bar div:last-child, .speciality .third-progress-bar div:last-child {
+.specialty .first-progress-bar div:last-child,
+.specialty .second-progress-bar div:last-child,
+.specialty .third-progress-bar div:last-child {
   background-color: #d4d4d4;
   width: 10%;
   padding: 5px 0;
 }
 
-.speciality .second-progress-bar div:first-child {
+.specialty .second-progress-bar div:first-child {
   width: 85%;
 }
 
-.speciality .second-progress-bar div:last-child {
+.specialty .second-progress-bar div:last-child {
   width: 15%;
 }
 
-.speciality .third-progress-bar div:first-child {
+.specialty .third-progress-bar div:first-child {
   width: 75%;
 }
 
-.speciality .third-progress-bar div:last-child {
+.specialty .third-progress-bar div:last-child {
   width: 25%;
 }
 
-.achivements {
+.achievements {
   background-color: #606060;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 15px;
   margin-top: 20px;
 }
 
-.achivements div {
+.achievements div {
   text-align: center;
 }
 
-.achivements div p:first-child {
+.achievements div p:first-child {
   font-size: 24px;
   margin-bottom: 0;
 }
 
-.achivements div p:last-child {
+.achievements div p:last-child {
   margin: 10px 0 20px 0;
 }
 
-.portfolio-img, .contact-img {
+.portfolio-img,
+.contact-img {
   height: 400px;
   position: relative;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   -webkit-filter: contrast(0.8);
-          filter: contrast(0.8);
+  filter: contrast(0.8);
 }
 
-.portfolio-img p, .contact-img p {
+.portfolio-img p,
+.contact-img p {
   position: absolute;
   margin: 0;
   bottom: 50%;
   right: 50%;
   -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
   color: #000000;
   font-size: 36px;
   font-weight: bold;
@@ -257,17 +267,17 @@ header nav ul li:hover:last-child a {
 .portfolio .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr) [2];
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 15px;
   margin: 50px;
 }
 
 .portfolio .gallery img {
   -webkit-filter: contrast(0.8);
-          filter: contrast(0.8);
+  filter: contrast(0.8);
 }
 
 .portfolio .gallery img:hover {
@@ -308,14 +318,14 @@ header nav ul li:hover:last-child a {
   display: grid;
   margin-top: 30px;
   -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-column-gap: 40px;
 }
 
 .contact .contact-info img {
   border-radius: 5px;
   -webkit-filter: contrast(0.8);
-          filter: contrast(0.8);
+  filter: contrast(0.8);
 }
 
 .contact .contact-info div div {
@@ -339,7 +349,7 @@ header nav ul li:hover:last-child a {
   padding: 10px;
   border: 1px solid #d4d4d4;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -347,7 +357,7 @@ header nav ul li:hover:last-child a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
   margin-bottom: 10px;
 }
